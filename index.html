@@ -1,0 +1,60 @@
+<!-- فرم ورود به پنل مدیریت -->
+<section id="admin-login" class="section-content">
+    <h1>ورود به پنل مدیریت</h1>
+    <form id="admin-login-form">
+        <label for="username">نام کاربری:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">رمز عبور:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">ورود</button>
+    </form>
+    <div id="error-message" style="color: red; display: none;">نام کاربری یا رمز عبور اشتباه است</div>
+</section>
+<!-- پنل مدیریت -->
+<section id="admin-dashboard" class="section-content hidden">
+    <h1>پنل مدیریت</h1>
+    <p>به پنل مدیریت خوش آمدید!</p>
+    <!-- بخش مدیریت منو -->
+    <section id="menu-management" class="hidden">
+        <h2>مدیریت منو</h2>
+        <form id="add-menu-item">
+            <label for="item-name">نام آیتم:</label>
+            <input type="text" id="item-name" name="item-name" required>
+            <label for="item-description">توضیحات:</label>
+            <input type="text" id="item-description" name="item-description" required>
+            <label for="item-price">قیمت:</label>
+            <input type="number" id="item-price" name="item-price" required>
+            <label for="item-category">دسته‌بندی:</label>
+            <select id="item-category" name="item-category" required>
+                <option value="food">غذا</option>
+                <option value="drink">نوشیدنی</option>
+                <option value="dessert">دسر</option>
+            </select>
+            <button type="submit">اضافه کردن</button>
+        </form>
+    </section>
+    <!-- بخش مدیریت نظرات -->
+    <section id="comments-management" class="hidden">
+        <h2>مدیریت نظرات</h2>
+        <div id="comments-list">
+            <!-- لیست نظرات به صورت دینامیک اینجا اضافه خواهند شد -->
+        </div>
+    </section>
+    <!-- بخش مدیریت کاربران -->
+    <section id="user-management" class="hidden">
+        <h2>مدیریت کاربران</h2>
+        <form id="add-user">
+            <label for="usernamek">نام کاربری:</label>
+            <input type="text" id="usernamek" name="usernamek" required>
+            <label for="passwordk">رمز عبور:</label>
+            <input type="password" id="passwordk" name="passwordk" required>
+            <label for="role">نقش:</label>
+            <select id="role" name="role" required>
+                <option value="admin">مدیر</option>
+                <option value="employee">کارمند</option>
+            </select>
+            <button type="submit">افزودن کاربر</button>
+        </form>
+    </section>
+</section>
+</div>
